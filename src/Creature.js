@@ -11,11 +11,9 @@ class Creature extends Card {
         let indexDescription = "";
         if (isDuck(this) && isDog(this)) {
             indexDescription = 'Утка-Собака';
-        }
-        if (isDuck(this)) {
-             indexDescription = 'Утка';
-        }
-        if (isDog(this)) {
+        } else if (isDuck(this)) {
+            indexDescription = 'Утка';
+        } else if (isDog(this)) {
             indexDescription = 'Собака';
         } else {
             indexDescription = 'Существо';

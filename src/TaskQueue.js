@@ -21,7 +21,7 @@ function runNextTask(taskQueue) {
     }
 }
 
-export default class TaskQueue {
+class TaskQueue {
     constructor() {
         this.tasks = [];
         this.running = false;
@@ -48,3 +48,5 @@ export default class TaskQueue {
         this.push(action, null, 0);
     }
 }
+
+export default TaskQueue;
