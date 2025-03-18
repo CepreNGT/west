@@ -1,6 +1,7 @@
 
 import Dog from './Dog.js';
 import Duck from './Duck.js';
+import Gatling from './Gatling.js';
 import Game from './Game.js';
 import TaskQueue from './TaskQueue.js';
 import SpeedRate from './SpeedRate.js';
@@ -30,19 +31,18 @@ function getCreatureDescription(card) {
 }
 
 
-
-
-
 // Колода Шерифа, нижнего игрока.
 const seriffStartDeck = [
     new Duck(),
     new Duck(),
-    new Duck(),
+    new Gatling(),
 ];
 
 // Колода Бандита, верхнего игрока.
 const banditStartDeck = [
     new Dog(),
+    new Dog(),
+    new Dog()
 ];
 
 
