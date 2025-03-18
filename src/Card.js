@@ -211,6 +211,7 @@ const Card = function () {
     // Строит описания карты, которые показываются на ее лицевой стороне.
     // Можно переопределить в наследниках.
     Card.prototype.getDescriptions = function () {
+        console.log('ne rabotaet');
         return [
             getInheritanceDescription(this)
         ];
