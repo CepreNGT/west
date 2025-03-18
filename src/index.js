@@ -3,6 +3,7 @@ import Duck from './Duck.js';
 import Brewer from './Brewer.js';
 import Trasher from './Trasher.js';
 import Gatling from './Gatling.js';
+import Lad from './Lad.js';
 import Game from './Game.js';
 import SpeedRate from './SpeedRate.js';
 
