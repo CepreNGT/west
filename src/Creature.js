@@ -6,6 +6,14 @@ class Creature extends Card {
         super(name, num);
     }
 
+    get power() {
+        return this.currentPower;
+    }
+
+    set power(newPower) {
+        this.currentPower = Math.min(this.maxPower, newPower);
+    }
+
     getDescriptions() {
         console.log(1);
         let indexDescription = "";

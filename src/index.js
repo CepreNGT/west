@@ -1,9 +1,9 @@
 import Dog from './Dog.js';
 import Duck from './Duck.js';
+import Brewer from './Brewer.js';
 import Trasher from './Trasher.js';
 import Gatling from './Gatling.js';
 import Game from './Game.js';
-import TaskQueue from './TaskQueue.js';
 import SpeedRate from './SpeedRate.js';
 
 // Отвечает является ли карта уткой.
@@ -31,19 +31,15 @@ function getCreatureDescription(card) {
 }
 
 
-// Колода Шерифа, нижнего игрока.
 const seriffStartDeck = [
     new Duck(),
-    new Duck(),
-    new Gatling(),
+    new Brewer(),
 ];
-
-// Колода Бандита, верхнего игрока.
 const banditStartDeck = [
     new Dog(),
-    new Trasher(),
     new Dog(),
-    new Dog()
+    new Dog(),
+    new Dog(),
 ];
 
 
