@@ -7,7 +7,6 @@ class Creature extends Card {
     }
 
     getDescriptions() {
-        console.log(1);
         let indexDescription = "";
         if (isDuck(this) && isDog(this)) {
             indexDescription = 'Утка-Собака';
@@ -20,7 +19,6 @@ class Creature extends Card {
         }
 
         const names = super.getDescriptions();
-        console.log([indexDescription, names]);
         return [indexDescription, names];
     }
 };

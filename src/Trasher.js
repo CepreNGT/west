@@ -16,6 +16,7 @@ class Trasher extends Dog {
     getDescriptions() {
         return [
             ...super.getDescriptions(),
+            'Получает на 1 меньше урона'
         ];
     }
 }
